@@ -17,8 +17,8 @@ services:
   db:
 #    image: postgres:9.4
     image: homorgan/cockroach-vote:v2
-#    volumes:
-#      - db-data:/var/lib/postgresql/data
+    volumes:
+      - /home/vagrant/cockroachdb:/cockroach/cockroach-data
     networks:
       - backend
     deploy:
@@ -99,4 +99,4 @@ networks:
   backend:
 
 #volumes:
-#  db-data:
+  /home/vagrant/cockroachdb:
