@@ -26,7 +26,7 @@ services:
         constraints: [node.role == manager]
   vote:
 #   image: dockersamples/examplevotingapp_vote:after
-    image homorgan/voter_vote:v1
+    image: homorgan/voter_vote:v1
     ports:
       - 5000:80
     networks:
