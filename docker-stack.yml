@@ -99,4 +99,4 @@ networks:
   backend:
 
 #volumes:
-  /home/docker/cockroachdb:
+  /home/docker/vote/cockroachdb:
